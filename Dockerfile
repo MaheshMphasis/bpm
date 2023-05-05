@@ -1,5 +1,5 @@
 # Start with a base image containing Java runtime (mine java 8)
-FROM openjdk:8u212-jdk-slim
+FROM maven:3.8.6-openjdk-17 as be-build-stage
 # Add Maintainer Info
 LABEL maintainer="maheh@gmail.com"
 # Add a volume pointing to /tmp
